@@ -12,7 +12,7 @@ A javascript-based HTML component that lets you create a stack of cards and swip
 
 ## Live demo
 
-Works best on iPhone: http://www.timo-ernst.net/misc/tindercardsjsdemo/
+Works best on iPhone: http://www.timo-ernst.net/misc/tinderCardsdemo/
 
 ## Tested on
 
