@@ -1,60 +1,49 @@
 <!doctype html>
+<html lang="en">
 
-<html>
-
-  <head>
-    <title>Tindercardsjs demo</title>
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    
-    <style>
-      
-      body{
-        font-family: 'Helvetica-Neue', 'HelveticaNeue', arial, sans-serif;
-        color: #434343;
-      }
-      
-      .tc-card-name{
-        font-weight:normal;
-      }
-      
-      #main{
-        position:relative;
-        width:320px;
-        height:480px;
-        left:50%;
-        margin-left:-160px;
-      }
-    </style>
-    
-  </head>
-  
-  <body>
-    
-    <div id="main"></div>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>App</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Rednit</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Help</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main role="main" class="container">
+        <div id="main"></div>
+    </main>
+
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/hammer/hammer.min.js"></script>
     <script src="lib/tindercardsjs/tindercards.js"></script>
-    
-    <script>
-      $(document).ready(function () {
-        
-        // Define cards
-        var cards = [
-          new Tindercardsjs.card(2, 'Geordi Laforge', 'I like big butts', 'gfx/pics/01.jpg'),
-          new Tindercardsjs.card(1, 'Agro Picard', 'Hates Klingons, likes beer.', 'gfx/pics/02.jpg'),
-          new Tindercardsjs.card(0, 'Jean-Luc, Worf & William', 'Swipe right if you also like funny hats like us :D', 'gfx/pics/03.jpg')
-        ];
-        
-        // Render cards
-        Tindercardsjs.render(cards, $('#main'), function (event) {
-          console.log('Swiped ' + event.direction + ', cardid is ' + event.cardid + ' and target is:');
-          console.log(event.card);
-        });
-      });
-    </script>
-    
-  </body>
-  
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
 </html>

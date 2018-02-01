@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass:300,400');
+
+body {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+}
+
+.navbar-dark {
+    background-color: darkred !important;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.tc-card-name {
+    font-weight: lighter;
+}
+
+#main {
+    position: relative;
+    width: 320px;
+    height: 480px;
+    left: 50%;
+    margin-left: -160px;
+}
