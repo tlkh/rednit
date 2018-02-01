@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Overpass:300,400');
+@import url('https://fonts.googleapis.com/css?family=Overpass:300,400,500');
 
 body {
   min-height: 75rem;
@@ -15,11 +15,17 @@ body {
 
 .navbar-brand {
     text-transform: uppercase;
-    font-weight: bolder;
+    font-weight: 500;
 }
 
 .tc-card-name {
-    font-weight: lighter;
+    font-weight: 300;
+}
+
+.tc-card-desc {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: grey;
 }
 
 #main {
