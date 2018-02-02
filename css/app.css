@@ -6,7 +6,7 @@ body {
 }
 
 body {
-    font-family: 'Overpass', sans-serif;
+    font-family: Overpass, sans-serif;
 }
 
 .navbar-dark {
@@ -14,7 +14,6 @@ body {
 }
 
 .navbar-brand {
-    text-transform: uppercase;
     font-weight: 500;
 }
 
@@ -26,6 +25,12 @@ body {
     text-transform: uppercase;
     font-weight: 500;
     color: grey;
+}
+
+.score {
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 300;
 }
 
 #main {
