@@ -7,6 +7,9 @@ body {
 
 body {
     font-family: Overpass, sans-serif;
+    overflow-y: hidden;
+    height: 99%;
+    max-height: 99%;
 }
 
 .navbar-dark {
@@ -15,6 +18,12 @@ body {
 
 .navbar-brand {
     font-weight: 500;
+}
+
+@media only screen and (max-width: 500px) {
+    .navbar-brand {
+        margin-left: 35%;
+    }
 }
 
 .tc-card-name {
